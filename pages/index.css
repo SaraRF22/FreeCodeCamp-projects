@@ -1,0 +1,113 @@
+/* the header style */
+.main-fonts{
+    color: black;
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: normal;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.headers-fonts{
+    color: black;
+    text-align: center;
+    font-family: "New Times Roman", Times, serif;
+    font-style: italic;
+    font-weight: 100;   
+}
+.container-1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.container-2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.container-1 div, .container-2 div{
+    border: 0.5px solid grey;
+}
+/* Element styles */
+.box1{
+    flex: 25%;
+}
+.box2{
+    flex: 50%;
+}
+.box3{
+    flex: 25%;
+}
+.box4{
+    flex: 25%;
+    text-align: center;
+}
+.box5{
+    flex: 75%;
+    
+    
+}
+/*  The Elements inside Box 5 */
+.divided-section-1{
+    
+    background-color:BurlyWood;
+}
+.divided-section-2{
+   
+    background-color: DarkSalmon;
+
+}
+.divided-section-3{
+    background-color: IndianRed ;
+}
+.divided-section-4{
+    background-color: HotPink; 
+}
+.divided-section-5{
+    background-color: MistyRose;
+}
+
+#footer{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    /*background-color: lemonchiffon; */
+    
+}
+
+#footer .contacts-info{
+    width: 100px;
+    height: 90px;
+    flex-grow: 2;
+}
+.contacts-info ul li{
+    list-style: none;
+    font-size: 24px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    line-height: 2;
+}
+.contacts-info ul li a{
+    text-decoration: none;
+}
+#footer .emial-section{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: left;
+    letter-spacing: 0.3px;
+    line-height: 2;
+    flex-grow: 2; 
+}
+
+  

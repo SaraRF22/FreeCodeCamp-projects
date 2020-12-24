@@ -1,0 +1,169 @@
+*{
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+    height: 150px;
+    width: 100%;
+    background-color: #66e0ff;
+}
+
+label.logo{
+    padding: 10px;
+    font-size: 80px;
+    line-height: 110px;
+    color: #ff0080;
+    font-weight: bolder;
+    text-align: center;
+    float: left;
+}
+
+nav ul{
+    float: right;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 120px;
+    margin: 10px 20px;
+}
+
+.icon{
+    width: 80px;
+    line-height: 80px;
+}
+.icon >i{
+    font-size: 45px;
+    color: #777777;
+}
+nav ul li a{
+    font-size: 50px;
+    font-weight: 15px;
+    color:  #ff6666;
+}
+
+a:hover{
+    color: #6600cc;
+    cursor: pointer;
+}
+
+.box{
+    width: 750px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    
+}
+
+.box > i{
+    font-size: 45px;
+    color: #777777;
+}
+.box >input{
+    flex: 1;
+    background-color: white;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+/* slider */
+
+#slider-container{
+    overflow: hidden;
+    
+}
+  
+#slider-container figure{
+    position: relative;
+    width: 400%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: 20s slider infinite;
+}
+  
+#slider-container figure img{
+    float: left;
+    width: 25%;
+}
+  
+@keyframes slider{
+    0%{left:0;}
+    20%{left:0;}
+    25%{left:-100%;}
+    45%{left:-100%;}
+    50%{left:-200%;}
+    70%{left:-200%;}
+    75%{left: -300%;}
+    95%{left: -300%;}
+    100%{left: -400%;}
+}
+
+
+
+
+
+
+
+
+
+.cards{
+    margin: 200px auto;
+    max-width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    gap: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(218, 139, 218);
+}
+
+.card{
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+}
+.card__img{
+    width: 100%;
+    display: block;
+}
+
+.card__content {
+     line-height: 1.5;
+     font-size: 14;
+     padding: 15px;
+     background: seashell;
+     text-align: center;
+}
+card__content h2{
+    margin-top: 0;
+}
+
+card__content p{
+    margin-bottom: 0;
+}
+
+.card__info{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    background: lightblue;
+    border-bottom: 2px solid cyan;
+}
+
+.card__info i{
+    font-size: 0.9em;
+    margin-right: 8px;
+}

@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 1px 4px rgb(27, 27, 26);
+    background-color: cadetblue;
+}
+.navbar a{
+    margin:0 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+}
+.navbar a:hover{
+    color:rgb(200, 35, 35);
+}
+/* body content */
+#welcome-section{
+    margin-top: 80px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#welcome-section h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    text-transform: capitalize;
+    word-spacing: 5px;
+    text-shadow: 2px 1px crimson;
+}
+#welcome-section p{
+    margin-top: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+/* img style */
+.intro{
+    margin-top: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.intro img{
+    width: 80%;
+    height: 70%;
+    position: relative;
+}
+/* style work intro */
+.work{
+    margin-top: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.work h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-shadow: 1px 2px 4px blueviolet;
+    text-align: center;
+}
+.work i{
+    font-size: 35px;
+    padding: 8px;
+    text-shadow: 1px 2px 4px blueviolet;
+}
+/* style container of work links */
+.card-container{
+    margin-top: 40px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 2.5;
+}
+.card-container a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 24px;
+    color: rgb(71, 46, 7);
+}
+.card-container a:hover{
+    color:blueviolet;
+}
+/* Footer */
+.footer{
+    margin-top: 150px;
+    padding: 0;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    background-color:#6d6d6d;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.footer a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 30px;
+    padding: 0 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* style footer icons */
+.social-media{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer .social-media i{
+    font-size: 24px;
+    padding: 10px 15px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 768px){
+    .navbar a{
+        margin:0 10px;
+        padding: 8px;
+        text-decoration: none;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+    }
+    #welcome-section h1{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 24px;
+        text-align: center;
+        text-transform: capitalize;
+        word-spacing: 5px;
+        text-shadow: 2px 1px crimson;
+    }
+    #welcome-section p{
+        margin-top: 28px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+        text-align: center;
+        font-style: italic;
+        text-transform: capitalize;
+    }
+    .work h1{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 24px;
+        text-shadow: 1px 2px 4px blueviolet;
+        text-align: center;
+    }
+    .work i{
+        font-size: 22px;
+        padding: 8px;
+        text-shadow: 1px 2px 4px blueviolet;
+    }
+    .card-container{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .card-container a{
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(182, 143, 79);
+    }
+    .footer a{
+        font-size: 20px;
+    }
+    .social-media i{
+        margin-top: 10px;
+    }
+}
